@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "541124798494",
+    "firebase_url": "https://idphyslearn.firebaseio.com",
+    "project_id": "idphyslearn",
+    "storage_bucket": "idphyslearn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541124798494:android:e65f666e937d0bc3",
+        "android_client_info": {
+          "package_name": "com.example.physlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541124798494-i820dkgbbs6jkc9b8avln4jsd9rouhvc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.physlearn",
+            "certificate_hash": "78c4250a4b8be3d9d67296d330c338f66fe9660f"
+          }
+        },
+        {
+          "client_id": "541124798494-c8riblvvuq15gt9k26imd1ss2kki0d09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNj5lj6WAaTWF6szHRSZgHIvRQ3aksf2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541124798494-c8riblvvuq15gt9k26imd1ss2kki0d09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
