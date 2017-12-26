@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.physlearn.Module5">
+    tools:context="com.example.physlearn.Modules.Module5">
 
     <ListView
         android:id="@+id/module5lv"

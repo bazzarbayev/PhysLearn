@@ -1,15 +1,20 @@
-package com.example.physlearn;
+package com.example.physlearn.Fragments;
 
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ProgressBar;
+
+import com.example.physlearn.Modules.Module1;
+import com.example.physlearn.Modules.Module2;
+import com.example.physlearn.Modules.Module3;
+import com.example.physlearn.Modules.Module4;
+import com.example.physlearn.Modules.Module5;
+import com.example.physlearn.R;
 
 
 public class HomeFragment extends Fragment implements View.OnClickListener{

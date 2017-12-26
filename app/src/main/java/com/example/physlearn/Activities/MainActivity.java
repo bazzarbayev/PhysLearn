@@ -1,4 +1,4 @@
-package com.example.physlearn;
+package com.example.physlearn.Activities;
 
 
 import android.os.Bundle;
@@ -11,6 +11,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.physlearn.Fragments.CoursesFragment;
+import com.example.physlearn.Fragments.HomeFragment;
+import com.example.physlearn.Fragments.QuizFragment;
+import com.example.physlearn.Fragments.SettingsFragment;
+import com.example.physlearn.Fragments.SignoutFragment;
+import com.example.physlearn.Fragments.StatisticsFragment;
+import com.example.physlearn.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

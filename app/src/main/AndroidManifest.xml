@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".Activities.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,21 +26,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".Activities.SignupActivity"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".Result1Activity" />
-        <activity android:name=".Module1" />
-        <activity android:name=".Module2" />
-        <activity android:name=".Module3" />
-        <activity android:name=".Module4" />
-        <activity android:name=".Module5" />
-        <activity android:name=".SubModule1"></activity>
+        <activity android:name=".Activities.ResetPasswordActivity" />
+        <activity android:name=".Activities.Result1Activity" />
+        <activity android:name=".Modules.Module1" />
+        <activity android:name=".Modules.Module2" />
+        <activity android:name=".Modules.Module3" />
+        <activity android:name=".Modules.Module4" />
+        <activity android:name=".Modules.Module5" />
+        <activity android:name=".Modules.SubModule1"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.physlearn;
+package com.example.physlearn.Modules;
 
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.example.physlearn.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 import java.io.BufferedInputStream;

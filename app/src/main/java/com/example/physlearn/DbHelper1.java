@@ -12,9 +12,9 @@ import java.util.List;
 public class DbHelper1 extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "quizsci1";
+    private static final String DATABASE_NAME = "physlearn_quest";
     // tasks table name
-    private static final String TABLE_QUEST = "quizgamesci1";
+    private static final String TABLE_QUEST = "physlearn_quest";
     // tasks Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_QUES = "question";

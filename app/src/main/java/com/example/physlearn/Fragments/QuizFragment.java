@@ -1,4 +1,4 @@
-package com.example.physlearn;
+package com.example.physlearn.Fragments;
 
 
 import android.content.Intent;
@@ -15,7 +15,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.physlearn.DbHelper1;
+import com.example.physlearn.Question1;
+import com.example.physlearn.R;
+import com.example.physlearn.Activities.Result1Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.example.physlearn;
+package com.example.physlearn.Fragments;
 
 
 import android.os.Bundle;
@@ -7,10 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.physlearn.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
+
 public class CoursesFragment extends Fragment {
 
 

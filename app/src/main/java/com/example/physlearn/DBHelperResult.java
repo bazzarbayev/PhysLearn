@@ -13,9 +13,9 @@ import java.util.List;
 public class DBHelperResult extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "quizappresult6";
+    private static final String DATABASE_NAME = "physlearn_result";
     // tasks table name
-    private static final String TABLE_RESULT = "quizappresult6";
+    private static final String TABLE_RESULT = "physlearn_result";
     // tasks Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";

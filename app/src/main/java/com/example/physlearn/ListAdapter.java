@@ -9,9 +9,10 @@ package com.example.physlearn;
         import android.view.View.OnClickListener;
         import android.view.ViewGroup;
         import android.widget.BaseAdapter;
-        import android.widget.EditText;
         import android.widget.TextView;
-        import android.widget.Toast;
+
+        import com.example.physlearn.Modules.SubModule1;
+        import com.example.physlearn.R;
 
         import java.util.ArrayList;
 

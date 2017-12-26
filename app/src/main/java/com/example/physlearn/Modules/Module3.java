@@ -1,8 +1,11 @@
-package com.example.physlearn;
+package com.example.physlearn.Modules;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+
+import com.example.physlearn.ListAdapter;
+import com.example.physlearn.R;
 
 import java.util.ArrayList;
 
