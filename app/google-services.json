@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "541124798494-7s1l6lfoacnfahqm2e95f9a4emqvlkjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.physlearn",
+            "certificate_hash": "3f4ce3956079755901be4906aa647f94792e5805"
+          }
+        },
+        {
           "client_id": "541124798494-i820dkgbbs6jkc9b8avln4jsd9rouhvc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

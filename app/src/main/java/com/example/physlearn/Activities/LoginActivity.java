@@ -105,11 +105,16 @@ public class LoginActivity extends AppCompatActivity {
                                 } else {
                                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(intent);
-                                    finish();
                                 }
                             }
                         });
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        progressBar.setVisibility(View.GONE);
     }
 }

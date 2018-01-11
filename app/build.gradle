@@ -34,7 +34,6 @@ dependencies {
     compile 'com.android.support:support-v4:26.+'
     testCompile 'junit:junit:4.12'
 
-
     //this Library for PDF
     compile 'com.github.barteksc:android-pdf-viewer:2.3.0'
     compile 'org.apache.commons:commons-io:1.3.2'

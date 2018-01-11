@@ -26,12 +26,12 @@ import com.google.firebase.auth.FirebaseUser;
 public class SettingsFragment extends Fragment {
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
-            changeEmail, changePassword, sendEmail, remove, signOut;
+            changeEmail, changePassword, sendEmail, remove;
 
     private EditText oldEmail, newEmail, password, newPassword;
     private ProgressBar progressBar;
     private FirebaseAuth.AuthStateListener authListener;
-    private FirebaseAuth auth;
+    public FirebaseAuth auth;
     private Toolbar toolbar;
 
 
@@ -60,7 +60,7 @@ public class SettingsFragment extends Fragment {
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    startActivity(new Intent(getActivity(), LoginActivity.class));
+//                    startActivity(new Intent(getActivity(), LoginActivity.class));
                     getActivity().finish();
                 }
             }
@@ -74,7 +74,6 @@ public class SettingsFragment extends Fragment {
         changePassword = (Button) v.findViewById(R.id.changePass);
         sendEmail = (Button) v.findViewById(R.id.send);
         remove = (Button) v.findViewById(R.id.remove);
-        signOut = (Button) v.findViewById(R.id.sign_out);
 
         oldEmail = (EditText) v.findViewById(R.id.old_email);
         newEmail = (EditText) v.findViewById(R.id.new_email);
@@ -244,13 +243,6 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        signOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signOut();
-            }
-        });
-
         return v;
     }
 
@@ -278,9 +270,6 @@ public class SettingsFragment extends Fragment {
             auth.removeAuthStateListener(authListener);
         }
     }
-
-
-
 }
 
 

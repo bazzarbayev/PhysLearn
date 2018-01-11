@@ -27,7 +27,8 @@ public class Result1Activity extends AppCompatActivity {
     DBHelperResult dbHelperResult, temp;
     int score;
     String date;
-    Button btnSave;
+    Button btnSave, btnShow;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,8 @@ public class Result1Activity extends AppCompatActivity {
 
         btnSave = (Button) findViewById(R.id.btnSave);
 
+        btnShow = (Button)findViewById(R.id.btnShow);
+
         //get text view
         TextView t=(TextView)findViewById(R.id.textResult);
         //get score
@@ -48,6 +51,9 @@ public class Result1Activity extends AppCompatActivity {
 
         score = b.getInt("score");
         //display score
+
+        DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+        date = df.format(Calendar.getInstance().getTime());
 
         switch (score)
         {
@@ -82,8 +88,7 @@ public class Result1Activity extends AppCompatActivity {
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 
-                                DateFormat df = new SimpleDateFormat("EEE dd MMM yyyy HH:mm");
-                                date = df.format(Calendar.getInstance().getTime());
+
                                 Result result = new Result(editText.getText().toString(), date.toString(), score + "");
                                 dbHelperResult.addQuestions(result);
                                 Toast.makeText(getApplicationContext(),
@@ -98,6 +103,18 @@ public class Result1Activity extends AppCompatActivity {
                                 });
                 AlertDialog alert = alertDialogBuilder.create();
                 alert.show();
+            }
+        });
+
+        btnShow.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Result1Activity.this, CertificateActivity.class);
+
+                intent.putExtra("score", String.valueOf(score));
+                intent.putExtra("date", date);
+                startActivity(intent);
             }
         });
 

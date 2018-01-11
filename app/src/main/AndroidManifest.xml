@@ -40,7 +40,8 @@
         <activity android:name=".Modules.Module3" />
         <activity android:name=".Modules.Module4" />
         <activity android:name=".Modules.Module5" />
-        <activity android:name=".Modules.SubModule1"></activity>
+        <activity android:name=".Modules.SubModule1" />
+        <activity android:name=".Activities.CertificateActivity"></activity>
     </application>
 
 </manifest>

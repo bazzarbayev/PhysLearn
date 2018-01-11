@@ -20,16 +20,13 @@
         android:src="@drawable/user" />
 
     <TextView
+        android:id="@+id/header_mail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="Arman Bazarbayev"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:text="user@gmail.com"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="bazzarbayev@gmail.com" />
 
 </LinearLayout>

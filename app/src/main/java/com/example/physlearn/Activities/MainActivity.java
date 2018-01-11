@@ -1,6 +1,7 @@
 package com.example.physlearn.Activities;
 
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.design.widget.NavigationView;
@@ -11,20 +12,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import android.widget.TextView;
 import com.example.physlearn.Fragments.CoursesFragment;
 import com.example.physlearn.Fragments.HomeFragment;
 import com.example.physlearn.Fragments.QuizFragment;
 import com.example.physlearn.Fragments.SettingsFragment;
-import com.example.physlearn.Fragments.SignoutFragment;
 import com.example.physlearn.Fragments.StatisticsFragment;
 import com.example.physlearn.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Toolbar toolbar;
+    String email;
 
+    public FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +41,7 @@ public class MainActivity extends AppCompatActivity
         toolbar.setTitle(getString(R.string.app_name));
         setSupportActionBar(toolbar);
 
+        auth = FirebaseAuth.getInstance();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -45,9 +52,26 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        View hView =  navigationView.getHeaderView(0);
+        TextView email_header = (TextView)hView.findViewById(R.id.header_mail);
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            email = user.getEmail();
+
+        }
+        email_header.setText(email);
+
+
         getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new HomeFragment()).commit();
 
     }
+
+    public void signOut() {
+        auth.signOut();
+    }
+
+
 
     @Override
     public void onBackPressed() {
@@ -110,7 +134,8 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_signout:
                 toolbar.setTitle("Sign Out");
-                fragment = new SignoutFragment();
+                signOut();
+                this.finish();
                 break;
         }
 
